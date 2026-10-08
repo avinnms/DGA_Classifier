@@ -1,0 +1,9 @@
+domain_generation_algorithms/
+*.csv
+*.zip
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+EOF
