@@ -12,7 +12,7 @@ def true_pos_at_false_pos_rate(y_true, scores, target_fpr):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--data", default="dga_domains.csv")
+    p.add_argument("--data", default="dataset.csv")
     p.add_argument("--fpr", type=float, default=0.001, help="shows false positive rate, where .001 is .1%% false positive")
     a = p.parse_args()
     df = pd.read_csv(a.data)

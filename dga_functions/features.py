@@ -28,7 +28,7 @@ def longest(s, charset):
 def handmade(label: str) -> dict:
     n = len(label) or 1
     letters = [c for c in label if c.isalpha()]
-    consonants = set("bcdefghjklmnpqrstvwxyz")
+    consonants = set("bcdfghjklmnpqrstvwxyz")
     return {
         "length": len (label),
         "entropy": entropy(label) if label else 0.0,
@@ -40,4 +40,4 @@ def handmade(label: str) -> dict:
         "unique_char_ratio": len(set(label)) / n,
     }
 
-featuredNames = list(handmade("example").keys())
+FEATURE_NAMES = list(handmade("example").keys())
